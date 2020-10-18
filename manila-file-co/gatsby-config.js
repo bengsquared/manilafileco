@@ -37,6 +37,5 @@ module.exports = {
         cookieDomain: "example.com",
       },
     },
-    `gatsby-plugin-postcss`,
   ],
 }

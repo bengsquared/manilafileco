@@ -34,7 +34,7 @@ module.exports = {
         // Any additional optional fields
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
+        cookieDomain: "manilafile.co",
       },
     },
   ],

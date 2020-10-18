@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "tailwindcss/base";
+
+:root {
+  --manila: #fdebb4;
+  --brown-text: #76561f;
+  --burnt-red: #e75613;
+  --dark-gray: #2e2e2e;
+}
+
+html {
+  background-color: var(--manila);
+  color: var(--brown-text);
+}
+
+#tools {
+  margin-top: 3em;
+}
+
+.wrap {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+a:hover {
+  color: var(--burnt-red);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1em;
+  margin: 1em;
+  margin-top: 0;
+  padding-top: 4em;
+}
+
+footer {
+  grid-row-start: 3;
+  grid-row-end: -1;
+  margin: 0;
+  margin-top: 5em;
+  padding-top: 4em;
+  padding-bottom: 5em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1em;
+  background-color: var(--dark-gray);
+  color: var(--manila);
+}
+
+.grid-list {
+  grid-column: 1/ -1;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1em;
+  margin-bottom: 1em;
+}
+
+.gl-icon {
+  justify-self: center;
+  object-position: center;
+  border: 1px black;
+  grid-column: 3/ 3;
+  max-height: 3em;
+}
+
+.gl-name {
+  border: 1px black;
+  grid-column: 4/ 10;
+}
+
+.gl-button1 {
+  border: 1px black;
+  grid-column: 11/ 11;
+}
+
+.gl-button2 {
+  border: 1px black;
+  grid-column: 12/ 12;
+}
+
+.splash {
+  margin-top: 10%;
+  margin-bottom: 3em;
+  grid-column: 4 / 10;
+}
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  display: flex;
+  flex-basis: 1;
+}
+
+.body-section {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 1px black;
+  grid-column: 4 / 10;
+}
+
+.title {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  margin: auto;
+}
+
+hr {
+  border-color: var(--brown-text);
+}
+
+.BigImage {
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.red-title {
+  color: var(--burnt-red);
+  font-weight: 700;
+}
+
+h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  text-align: center;
+  margin: auto;
+}
+
+h2 {
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  margin: auto;
+}
+
+h3 {
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: "DM Sans", sans-serif;
+  text-align: left;
+  font-size: 1em;
+}
+
+h5 {
+  font-family: "DM Sans", sans-serif;
+  text-align: left;
+  font-size: 1em;
+}
+
+p {
+  font-family: "Source Serif Pro", serif;
+  text-align: justify;
+}
+
+header {
+  display: grid;
+  width: 100%;
+  position: fixed;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: var(--manila);
+  border-bottom: 1px solid var(--brown-text);
+  padding: 0.25em;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.header-nav a {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  object-fit: contain;
+  max-height: 2em;
+  padding: 0.5em;
+  padding-right: 1em;
+  display: inline;
+  align-content: center;
+}
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";

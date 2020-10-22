@@ -8,6 +8,7 @@ export default function Layout({ children }) {
       <Helmet>
         <link rel="icon" href={favicon} />
       </Helmet>
+
       {children}
     </div>
   )

@@ -15,7 +15,10 @@ export default function Home() {
           <img alt="tidyUp logo" src={tidyUp} className="BigImage center" />
           <h1>tidyUp</h1>
           <h2>helps you clean up your desktop and other large folders</h2>
-          <p className="centerText"> coming soon </p>
+          <p className="centerText"> Mac Beta available now! </p>
+          <a href={`tidyUp.dmg`} download="tidyUp.dmg">
+            Download for Mac
+          </a>
         </section>
         <section className="body-section">
           <p>

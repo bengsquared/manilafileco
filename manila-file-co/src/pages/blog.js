@@ -4,7 +4,6 @@ import logo from "../img/manila.svg"
 import tidyUp from "../img/tidyup.svg"
 import Header from "../components/header"
 import Footer from "../components/footer"
-import GridListItem from "../components/GridListItem"
 
 export default function Home() {
   return (
@@ -18,39 +17,30 @@ export default function Home() {
         </section>
         <section className="body-section">
           <p className="justify">
-            <br />
-            Sometimes working with our computer can feel a bit like searching
-            through a messy attic; Our goal is to help you make it a
-            well-ordered study.
-            <br /> <br />
-            Manila helps you to harness the power of your computer to organize
-            your ideas, projects, and about any other digital thing you have, so
-            you can focus on what you do best, and let the computer handle the
-            rest.
-            <br />
-            <br />
-            We're here to put the "personal" back in Personal Computer.
-            <br />
+            Inspired by some of the foundational figures in human computer
+            interaction, Manila creates tools to make computing personal and
+            innovate how we operate with our information at the most basic
+            level.
           </p>
         </section>
         <section id="tools" className="body-section">
           <h3>Tools</h3>
           <hr />
         </section>
-        <GridListItem
-          image={tidyUp}
-          name={"tidyUp"}
-          description={
-            "helps you clean up your desktop and other large folders"
-          }
-          link={"/tidyUp"}
-          button1={<h3>Mac Beta</h3>}
-          button2={
-            <a href={`tidyUp.dmg`} download="tidyUp.dmg">
-              Download for Mac
+        <section className="grid-list">
+          <img alt="tidyUp logo" className="gl-icon" src={tidyUp} />
+          <div className="gl-name">
+            <a href="/tidyUp">
+              <h4>
+                <span className="red-title">{"tidyUp "}</span>
+                helps you clean up your desktop and other large folders
+              </h4>
             </a>
-          }
-        />
+          </div>
+          <div className="gl-button1">
+            <h5>Coming soon</h5>
+          </div>
+        </section>
         <section className="body-section signUpSection">
           <div className="centerText">Want to hear when we launch stuff?</div>
           <button
